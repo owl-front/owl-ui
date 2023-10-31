@@ -1,0 +1,49 @@
+{
+  "name": "owl-ui",
+  "version": "1.0.0",
+  "description": "owl前端UI库",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/owl-ui/owl-ui.esm.js",
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owl-front/owl-ui.git"
+  },
+  "keywords": [
+    "owl",
+    "ui"
+  ],
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "dependencies": {
+    "@stencil/core": "^4.0.0",
+    "@stencil/less": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "puppeteer": "21.1.1"
+  },
+  "author": "owl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owl-front/owl-ui/issues"
+  },
+  "homepage": "https://github.com/owl-front/owl-ui#readme"
+}

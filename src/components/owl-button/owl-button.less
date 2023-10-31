@@ -1,0 +1,34 @@
+.owl-button {
+  background-color: #ffffff;
+  border: 1px solid @border-color;
+  color: @default-color;
+  height: @default-height;
+  line-height: @default-height;
+  border-radius: @default-radius-size;
+  padding: 0px 15px;
+  font-size: @default-font-size;
+  cursor: pointer;
+  &.is-block {
+    width: 100%;
+    display: block;
+  }
+
+  .fill-color(@color) {
+    background-color: @color;
+    color: #ffffff;
+    border: none;
+  }
+
+  &.is-primary {
+    .fill-color(@primary-color);
+  }
+
+  &.is-danger {
+    .fill-color(@error-color);
+  }
+  &.is-disabled {
+    background-color: @gray-color;
+    opacity: 0.25;
+    cursor: not-allowed;
+  }
+}
